@@ -15,16 +15,24 @@
 <body>
 
   <h2>Login with Telegram</h2>
-
-
+<script async src="https://telegram.org/js/telegram-widget.js"></script>
+<script src="https://telegram.org/js/telegram-web-app.js?56"></script>
 
   <!-- Telegram Login Widget -->
 
+<script async src="https://telegram.org/js/telegram-widget.js?22"
+  data-telegram-login="billhuang_testing_bot" 
+ data-size="medium"
+  data-auth-url="https://localhost:7081/Test/TelegramAuth?test=1234&"
+  data-request-access="write"></script>
 
-<a href="https://oauth.telegram.org/auth?bot_id=7890789809&origin=https://reireihuang.github.io&return_to=https://1210-211-75-116-91.ngrok-free.app/Test/TelegramAuth"
-   target="_blank">
-   <button>使用 Telegram 登入</button>
-</a>
+<script>
+
+console.log(Telegram.WebApp.initData)
+window.alert(Telegram.WebApp.initData);
+
+</script>
+
 
 </body>
 
